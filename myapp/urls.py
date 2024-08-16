@@ -12,4 +12,6 @@ urlpatterns = [
     path('list_productos/<int:id>/update', views.update_productos),
     path('dashboard', views.dashboard),
     path('productos_por_vencer', views.prodcuts_por_vencer),
+    path('list_productos/add', views.add_productos),
+    path('list_categorias/add', views.add_categoria),
 ]

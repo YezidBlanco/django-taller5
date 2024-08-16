@@ -1,0 +1,26 @@
+{% extends "myapp/base.html" %}
+
+{% block content %}
+
+<!-- Containers -->
+<div class="container-fluid p-5 bg-success text-white text-center">
+  <h1>Agregar nuevo Producto</h1>
+</div>
+
+<div class="container mt-4">
+  <!-- Card Horizontal -->
+  <div class="container">
+
+      <form action="#" method="POST">
+        {% csrf_token %}
+
+        {{ form }}
+        <input type="submit" value="Submit">
+        
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+  </div>
+</div>
+
+{% endblock %}
